@@ -1,0 +1,417 @@
+*{
+    box-sizing: border-box; /* genişliği ve yüksekliği sabitledim */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* boşlukları sıfırladım */
+    background-color:#F2F3F4 ;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#banner{
+    background-color:#D6DBDF;
+    color: #17202A ;
+    height: 55px;
+    width: 100%;
+    /* pozisyon yukarıdan 0 olunca banner sayfaya yapışsın */
+    position: sticky;
+    top: 0;
+    z-index: 1; /* sayfa içinde herhangibir şey bunun üstüne çıkmasın diye */
+    font-size:18px;
+    text-align: right;
+    padding: 15px;
+}
+
+font{
+    float: left; /* yazıyı sola aldım */
+    letter-spacing: 2px;
+}
+
+span{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* banner bölümündeki i lere müdahale ediyorum*/
+#banner>i{
+    margin-right: 15px;
+}
+
+/* sembollerin üstüne gelince opaklığı düşürdüm */
+#banner>i:hover{ 
+    opacity: 0.8;
+}
+
+
+#container{
+    width:80%;
+    height: auto;
+    margin: auto; /* sayfa içinde ortalansın sol-sağ bosluklar eşit olsun */
+}
+
+header{
+    width: 100%; /*header, container içinde o yüzden tamamını kullansın */
+    height: 250px;
+    /* header'a gölge verdim */
+    box-shadow: 0 2px 15px 4px #8c8f92;
+    /* header'ın köşelerini ovalleştirdim */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative; /* üstüne yazacağım yazının headera göre konumlanması için */
+    background-color: black; /* headeryazi nın net gözükmesi için*/
+    margin-bottom: 5px; /* içerikle arasında boşluk olsun diye */
+}
+
+#headerRSM{
+    width:100%; /*resim header içinde tamamını kullansın */
+    height:250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity:0.6;
+}
+
+#headeryazi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* yazının tam ortalanması için */
+    color: white;
+    font-size: 35px;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+section{
+
+    width:100%;
+    height: auto;
+    background-color:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 15px 4px #8c8f92;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+nav{
+    width:20%;
+    height:auto;
+    float: left; /* kendisinden sonra gelecek içerik yanına gelsin */
+    margin-top:10px;
+}
+
+nav ul{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    list-style-type: none; /* liste elemanlarının başındaki semboller kalktı */
+}
+
+nav li a{
+    height:50px;
+    line-height: 50px;
+    text-decoration: none; /* alt çizgiyi kaldırdım */
+    border-bottom: 1px solid #F2F3F4;
+    padding-left: 20px;
+    display: block;
+   
+}
+
+nav li a:hover{
+    background-color :#E5E8E8 ;
+    color: white;
+}
+
+i{
+    margin-right: 10px;
+}
+
+main{
+    float: left;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+}
+
+.icerik{
+    width: 48%; 
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px 4px #8c8f92;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.rsm{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    transition: opacity 0.8s;
+}
+
+.rsm:hover{
+    opacity: 0.6;
+}
+
+h5{
+    margin: 10px;
+    color: dimgray;
+}
+
+.icerikText{
+    margin: 10px;
+    color: dimgray;
+}
+
+.DEVAM:link{
+    display: block;
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: #78281f60;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.DEVAM:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color:#D6DBDF;
+    color:black;
+    line-height: 75px;
+    text-align: center;
+    box-shadow: 0 2px 15px 4px #8c8f92;
+}
+
+h1{
+    text-align: center;
+    background-color: #839192  ;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px 4px #8c8f92;
+}
+
+.rsmacıklama{
+    width: 350px;
+    height: 300px;
+    float:left;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.yazi{
+    margin-right: 15px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 40px; /* giriş paragrafını öteliyo girinti */
+    color: #494949 ;
+}
+
+#alinti{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+#ygalinti{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgba(61, 15, 6, 0.644);
+    text-indent: 80px;
+}
+
+#yg2{
+    width: 350px;
+    height: 300px;
+    float:left;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.hakkımdarsm{
+    width: 350px;
+    height: 375px;
+    float:left;
+    border-radius: 50%;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#hakkindaalinti{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgba(61, 15, 6, 0.644);
+    text-indent: 80px;
+}
+
+.ressamlar{
+    width: 31%;
+    height: 300px;
+    background-color: white;
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px 4px #8c8f92;
+}
+
+.ressamlarrsm{
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: opacity 0.8s;
+}
+
+.resssamlarrsm:hover{
+    opacity: 0.6;
+}
+
+.ressamlarBaslik{
+    font-size: 20px;
+    margin-top: 0;
+    color: #17202A;
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    background-color: #f1f1f1;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.ressamlarDetay{
+    text-align: center;
+    font-size: 15px;
+}
+
+.galRSM{
+    width:22%;
+    height:200px;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,0.15);
+    margin: 10px;
+    transition: all 0.8s; /* tüm opacity ve cursor için all dedik hepsini yavaş yap */
+    object-fit: cover; /* resmin oranını korur */
+}
+
+.galRSM:hover{
+    opacity: 1;
+    border: 5px solid white;
+    cursor: pointer; /* mouse el oluyor */
+}
+
+.link:link{
+    text-decoration: none;
+}
+
+iframe{
+    width: 98%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28,0.15);
+    margin-left: 10px;
+}
+
+.sec1{
+    width: 98%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.form{
+    width: 49%;
+    float: left;
+    height: 350px;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    margin-right: 10px; 
+}
+
+.col25{
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+
+.col75{
+    width: 75%;
+    float: left;
+    margin-top: 6px;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text],textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* karışıklığı önlemek için yazarız */
+.row:after{
+    content: ""; /* boş bir div oluşturdu*/
+    clear: both;
+    display: block;
+}
+
+input[type=submit]{
+    background-color: #4caf50;
+    color: white;
+    padding:12px 20px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+}
+
+.adres{
+    width: 49%;
+    float: left;
+    height: 380px;
+    border: 1px solid #d8d8d8 ;
+    padding:10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.span1{
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 16px;
+}
