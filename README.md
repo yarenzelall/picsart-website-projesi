@@ -2,7 +2,7 @@
 
 ![Banner Resmi](https://github.com/yarenzelall/picsart-website-projesi/blob/main/resimler/picsart.png)
 
-## Projenim Amacı
+## Projenin Amacı
 Picsart yaptığım ilk site. Ressamlar ve ünlü tabloların yorumlarını içeriyor. Kodları Visual Studio Code'da Brackets eklentisi kullanarak çalıştırabilirsiniz.
 <br/>
 ## html5 ve css3 dillerini kullandım
